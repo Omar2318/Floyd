@@ -1,0 +1,136 @@
+/* General print styles */
+@media print {
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 1.5;
+      color: #000;
+      background: #fff;
+      margin: 2cm;
+      padding: 0;
+    }
+  
+    h1 {
+      font-size: 24pt;
+      text-align: center;
+      margin-bottom: 20pt;
+      page-break-after: avoid;
+    }
+  
+    h3 {
+      font-size: 16pt;
+      margin-top: 15pt;
+      margin-bottom: 10pt;
+      page-break-after: avoid;
+    }
+  
+    /* Hide interactive elements when printing */
+    #dimension, #generar, #resolver {
+      display: none !important;
+    }
+  
+    label {
+      display: none;
+    }
+  
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15pt 0;
+      page-break-inside: avoid;
+    }
+  
+    table, th, td {
+      border: 1px solid #000;
+    }
+  
+    th, td {
+      padding: 8pt;
+      text-align: center;
+    }
+  
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+  
+    /* Input styling for the matrix cells */
+    input {
+      border: none;
+      text-align: center;
+      width: 100%;
+      font-family: inherit;
+      background: transparent;
+    }
+  
+    /* Results container */
+    #resultado-container {
+      margin-top: 20pt;
+    }
+  
+    /* Ensure page breaks don't occur in the middle of tables */
+    #table-container, #resultado-container {
+      page-break-inside: avoid;
+    }
+  }
+  
+  /* Regular screen styles */
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="number"], input[type="text"] {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  input[type="text"] {
+    width: 50px;
+    text-align: center;
+  }
+  
+  #resultado-container {
+    margin-top: 30px;
+  }
