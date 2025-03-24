@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const rowData = [];
             for (let cell of row.cells) {
                 const value = cell.firstChild.value;
-                rowData.push(value.toLowerCase() === "inf" ? inf : parseInt(value));
+                rowData.push(isNaN(value) ? inf : parseInt(value));
             }
             matrix.push(rowData);
         }
